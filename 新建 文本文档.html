@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>11111</title></head
+  ><style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background-color: rgb(233, 233, 233);
+    }
+    /* * {
+      border: 1px solid rgb(97, 0, 157);
+    } */
+    .flex {
+      display: flex;
+    }
+    .flex1 {
+      flex: 1;
+    }
+    .column {
+      flex-direction: column;
+    }
+    .mg8 {
+      margin: 6px;
+    }
+    .mgr8 {
+      margin-right: 6px;
+    }
+    .mgt8 {
+      margin-top: 6px;
+    }
+    .zise {
+      background-color: rgb(151, 73, 223);
+    }
+    .yinYing {
+      box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px,
+        rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 3px 0px;
+    }
+  </style>
+  <body class="flex">
+    <!--侧边栏-->
+    <div style="width: 200px; z-index: 2" class="zise yinYing">
+      <!--头像栏-->
+      <div
+        style="
+          padding: 10px;
+          align-items: center;
+          justify-content: center;
+          border-bottom: 1px solid rgb(233, 233, 233);
+        "
+        class="flex"
+      >
+        <img
+          src="https://tvax1.sinaimg.cn/large/008vOhrAgy1hdsjlaex7bj30u00u0gqt.jpg"
+          width="40px"
+          height="40px"
+          alt=""
+        />
+      </div>
+    </div>
+    <!--主区域-->
+    <div class="flex flex1 column">
+      <!--头部栏-->
+      <div style="height: 60px; z-index: 1" class="zise yinYing"></div>
+      <!--内容区-->
+      <div style="overflow: auto" class="flex1 flex">
+        <!--左区-->
+        <div style="flex: 3" class="flex column mg8">
+          <!--左上-->
+          <div class="flex">
+            <!--小列表块-->
+            <div style="height: 100px; flex: 1" class="mgr8 zise yinYing"></div>
+            <div style="height: 100px; flex: 1" class="mgr8 zise yinYing"></div>
+            <div style="height: 100px; flex: 1" class="mgr8 zise yinYing"></div>
+            <div style="height: 100px; flex: 1" class="zise yinYing"></div>
+          </div>
+          <!--左下-->
+          <div class="flex column">
+            <!--列表项-->
+            <div style="height: 135px" class="mgt8 zise yinYing"></div>
+            <div style="height: 135px" class="mgt8 zise yinYing"></div>
+            <div style="height: 135px" class="mgt8 zise yinYing"></div>
+            <div style="height: 135px" class="mgt8 zise yinYing"></div>
+            <div style="height: 135px" class="mgt8 zise yinYing"></div>
+            <div style="height: 135px" class="mgt8 zise yinYing"></div>
+          </div>
+        </div>
+        <!--右区-->
+        <div style="flex: 1" class="flex column mgr8 mgt8">
+          <!--右上-->
+          <div style="height: 150px" class="zise yinYing"></div>
+          <!--右下-->
+          <div style="height: 150px" class="mgt8 zise yinYing"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
